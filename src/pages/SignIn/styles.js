@@ -35,8 +35,8 @@ export const ContainerTexto = styled.div`
 `;
 
 export const ContainerForm = styled.div`
-  width: 49%;
-  height: 90%;
+  width: 45%;
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;

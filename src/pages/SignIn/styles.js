@@ -1,17 +1,25 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 100%;
   max-width: 1030px;
-  height: 600px;
   min-height: 500px;
-  padding: 70px;
+  height: 550px;
+  padding: 15px 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media(max-width: 1208px) {
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+  }
+
 `;
 
+//@media(max-width: 800px) { }
 export const ContainerTexto = styled.div`
   width: 49%;
   height: 90%;
@@ -19,6 +27,21 @@ export const ContainerTexto = styled.div`
   padding: 5px 25px;
   justify-content: center;
   flex-direction: column;
+
+  @media(max-width: 1208px) {
+    height: 350px;
+    width: 75%;
+  }
+
+  @media(max-width: 692px) {
+    height: 300px;
+    width: 90%;
+  }
+
+  @media(max-width: 520px) {
+    width: 95%;
+    height: 280px;
+  }
 
   p {
     color: #1878F2;
@@ -33,6 +56,19 @@ export const ContainerTexto = styled.div`
     margin-top: 5px;
     font-weight: 500;
   }
+
+  @media(max-width: 428px) {
+    width: 95%;
+    height: 280px;
+
+    p {
+      font-size: 38px;
+    }
+
+    span {
+      font-size: 22px;
+    }
+  }
 `;
 
 export const ContainerForm = styled.div`
@@ -46,6 +82,25 @@ export const ContainerForm = styled.div`
   background: #fff;
   border-radius: 15px;
   box-shadow: 0px 0px 15px -5px #555;
+
+  @media(max-width: 1208px) {
+    height: 450px;
+    margin-top: 15px;
+    width: 65%;
+  }
+
+  @media(max-width: 692px) {
+    width: 80%;
+  }
+
+  @media(max-width: 520px) {
+    width: 90%;
+  }
+
+  @media(max-width: 428px) {
+    width: 95%;
+    height: 400px;
+  }
 `;
 
 export const BoxInput = styled.div`
@@ -105,6 +160,10 @@ export const BoxButtons = styled.div`
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease-in;
+
+    @media(max-width: 428px) {
+      width: 75%;
+    }
 
     &:hover {
      background : #36A420;

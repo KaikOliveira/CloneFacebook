@@ -11,8 +11,11 @@ export default createGlobalStyle`
     background: #EcEcEc;
     color: #222;
     -webkit-font-smoothing: antialiased;
-    max-width: 100vw;
-    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   body, input, button {
     font-family: 'Roboto Slab', serif;

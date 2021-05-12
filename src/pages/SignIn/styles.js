@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
-
+  width: 100%;
+  max-width: 1030px;
+  height: 600px;
+  min-height: 500px;
   padding: 70px;
   display: flex;
   flex-direction: row;
@@ -96,7 +97,7 @@ export const BoxButtons = styled.div`
   }
 
   div {
-    width: 45%;
+    width: 55%;
     height: 27%;
     border-radius: 8px;
     background: #42B72A;
@@ -114,11 +115,7 @@ export const BoxButtons = styled.div`
   span {
     color: #fff;
     font-weight: 600;
-    font-size: 20px;
-
-    &:hover {
-      
-    }
+    font-size: 18px;
   }
 
 `;
